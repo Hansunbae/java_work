@@ -6,4 +6,5 @@
  *
  */
 module ex_01 {
+	requires java.desktop;
 }

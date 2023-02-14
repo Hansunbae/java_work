@@ -17,6 +17,8 @@ public class MainTest1 {
 		System.out.println(book1);
 		// toString 메서드는 필요하다면 재정의 하여 사용할 수 있다.
 		System.out.println(book2);
+		
+		System.out.println("------------------");
 
 		if (book2 == book3) {
 			System.out.println("주소값이 같아요");
