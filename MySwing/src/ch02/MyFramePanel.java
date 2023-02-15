@@ -23,7 +23,7 @@ public class MyFramePanel extends JFrame {
 		initData();
 		setInitLayout();
 	}
-	
+
 	private void initData() {
 		setTitle("패널추가 연습");
 		setSize(600, 400);
@@ -32,7 +32,7 @@ public class MyFramePanel extends JFrame {
 		panel1.setBackground(Color.red);
 		panel2 = new JPanel();
 		panel2.setBackground(Color.yellow);
-		
+
 		// 버튼 초기화
 		button1 = new JButton("button1");
 		button2 = new JButton("button2");
@@ -43,21 +43,22 @@ public class MyFramePanel extends JFrame {
 	}
 
 	private void setInitLayout() {
-		add(panel1,BorderLayout.CENTER); // 빨간색 패널 중앙 영역
-		add(panel2,BorderLayout.SOUTH); // 노란색 패널 서쪽 영역
+		add(panel1, BorderLayout.CENTER); // 빨간색 패널 중앙 영역
+		add(panel2, BorderLayout.SOUTH); // 노란색 패널 서쪽 영역
 		// 루트 패널 기본 레이아웃 BorderLayout이다.
 		// 하지만 추가적으로 만들어 사용하는 panel은 기본 레이아웃이 FlowLayout이다.
 		panel1.add(button1);
 		panel1.add(button2);
 		panel1.add(button3);
-		panel1.setLayout(new FlowLayout(FlowLayout.RIGHT,10,10));
+		panel1.setLayout(new FlowLayout(FlowLayout.RIGHT, 10, 10));
 		panel2.add(button4);
 		panel2.add(button5);
 		panel2.add(button6);
-		panel2.setLayout(new FlowLayout(FlowLayout.LEFT,10,10));
-		
+		panel2.setLayout(new FlowLayout(FlowLayout.LEFT, 10, 10));
+
 		setVisible(true);
 	}
+
 	public static void main(String[] args) {
 		new MyFramePanel();
 	}
