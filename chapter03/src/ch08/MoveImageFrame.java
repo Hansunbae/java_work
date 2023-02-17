@@ -25,7 +25,7 @@ public class MoveImageFrame extends JFrame {
 		@Override
 		public void paint(Graphics g) {
 			super.paint(g);
-			g.drawImage(image1, 10, 10, 200, 200, null);
+			g.drawImage(image1, 10, 10, 100, 100, null);
 		}
 	}
 	private JLabel image;
@@ -60,6 +60,8 @@ public class MoveImageFrame extends JFrame {
 		image.setBorder(bb);
 		image.setLocation(X, Y);
 		imagePanel.setLocation(X, Y);
+		imagePanel.setBorder(bb);
+		
 		setVisible(true);
 	}
 

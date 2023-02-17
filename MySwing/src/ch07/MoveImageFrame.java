@@ -26,7 +26,7 @@ public class MoveImageFrame extends JFrame implements Moveable {
 		X = 300;
 		Y = 350;
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		player = new JLabel(new ImageIcon("images/image3.png"));
+		player = new JLabel(new ImageIcon("images/pink_imageRf.gif"));
 		player.setSize(100, 100);
 	}
 
