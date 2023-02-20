@@ -1,34 +1,66 @@
 package parctice;
 
-import javax.swing.JFrame;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
-public class Typeing extends JFrame {
-	String Write;
-	int number;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Typeing  extends JFrame implements KeyListener{
 	
-	private void frameWork() {
+	MyPannel myPannel;
+	
+	public Typeing() {
 		initData();
 		setInitLayout();
 		addEventListener();
 	}
 	
-	private void initData() {
-		setSize(800,800);
+	public void initData() {
+		setSize(600,600);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		
 	}
 	
-	private void setInitLayout() {
+	public void setInitLayout() {
 		setVisible(true);
 	}
+	public void addEventListener() {
+		
+	}
 	
-	private void addEventListener() {
+	class MyPannel extends JPanel{
+		
+		
 		
 	}
-	public static void main(String[] args) {
-		
 
+	@Override
+	public void keyTyped(KeyEvent e) {
+		
+		
 	}
 
+	@Override
+	public void keyPressed(KeyEvent e) {
+		int keyCode = e.getKeyCode();
+		
+		if(keyCode == KeyEvent.VK_RIGHT) {
+			
+		} else if ( keyCode == KeyEvent.VK_LEFT ) {
+			
+		} else if (keyCode == KeyEvent.VK_UP) {
+			
+		}else if (keyCode == KeyEvent.VK_DOWN) {
+			
+		}
+		
+		
+	}
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+		
+		
+	}
 }
