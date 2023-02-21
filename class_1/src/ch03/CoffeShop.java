@@ -7,9 +7,9 @@ public class CoffeShop {
 	private static Coffee[] coffees = { 
 			new Coffee("아메리카노", 3000), 
 			new Coffee("카페라떼", 4000),
-			new Coffee("카푸치노", 4500), 
+			new Coffee("카푸치노", 4500) 
 			};
-
+	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("고객 이름을 입력하세요");

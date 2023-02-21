@@ -16,5 +16,4 @@ public class Coffee {
 	public int getPrice() {
 		return price;
 	}
-
 }

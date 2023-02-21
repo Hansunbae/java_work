@@ -1,66 +1,17 @@
 package parctice;
 
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
+import java.awt.Color;
+import java.awt.image.BufferedImage;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-
-public class Typeing  extends JFrame implements KeyListener{
+public class Typeing implements Runnable{
+	private BufferedImage image;
 	
-	MyPannel myPannel;
 	
-	public Typeing() {
-		initData();
-		setInitLayout();
-		addEventListener();
-	}
-	
-	public void initData() {
-		setSize(600,600);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
-	}
-	
-	public void setInitLayout() {
-		setVisible(true);
-	}
-	public void addEventListener() {
-		
-	}
-	
-	class MyPannel extends JPanel{
-		
-		
-		
-	}
-
-	@Override
-	public void keyTyped(KeyEvent e) {
-		
-		
-	}
-
-	@Override
-	public void keyPressed(KeyEvent e) {
-		int keyCode = e.getKeyCode();
-		
-		if(keyCode == KeyEvent.VK_RIGHT) {
-			
-		} else if ( keyCode == KeyEvent.VK_LEFT ) {
-			
-		} else if (keyCode == KeyEvent.VK_UP) {
-			
-		}else if (keyCode == KeyEvent.VK_DOWN) {
-			
+	 @Override
+	public void run() {
+		while(true) {
+			Color leftColor = new Color(image.getRGB(0, 0));
 		}
-		
-		
-	}
-
-	@Override
-	public void keyReleased(KeyEvent e) {
-		
 		
 	}
 }
